@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link  {
+    margin-left: 2rem;
+}
+
+.carousel-item {
+    height: 85vh;
+}
+
+
+/* ########################
+--------Header Slider   */
+
+.header-slider {
+    padding: 0;
+}
+
+.carousel-caption {
+    text-align: left;
+    right: 0;
+    bottom: 30%;
+    left: 5%;
+}
+
+.carousel-caption h2 {
+    font-size: 3rem;
+    width: 40rem;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 4%;
+}
+
+.hero-text {
+    font-size: 1.2rem;
+}
+
+.btn-style {
+    border: 3px solid white;
+    color: white;
+    border-radius: 0;
+    margin-top: .5rem;
+
+    transform: scale(1);
+    transition: all .15s 
+}
+
+.btn-style:hover {
+    background-color: white;
+    transform: scale(1.1);
+}
+
+
+
+/* ########################
+--------Image List  */
+
+#image-list {
+    margin-top: 5rem;
+}
+
+.image-container {
+    /* height: 23.7rem; */
+    /* border: 5px solid black; */
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.grid-imager {
+    width: 100%;
+    transform-origin: center center;
+    transition: all .5s ease-in-out;
+    filter: brightness(100%);
+}
+
+.grid-imager:hover {
+    transform: scale(1.5);
+    filter: brightness(60%);
+}
+
+.info-text {
+    font-size: 1.6rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.image-container:hover .info-text {
+    opacity: 1;
+}
+
+.image-container:hover .grid-imager {
+    filter: brightness(60%);
+    transform: scale(1.5);
+}
+
+
+
+/* ########################
+--------New Arrival  */
+
+#newArrival {
+    margin-top: 5rem;
+    background-color: #f1efee;
+    padding: 4rem 0;
+}
+
+.arrival-container {
+   padding: 0 6rem; 
+}
+
+.arrivals-header {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+.style-card {
+    border: none;
+    border-radius: 0;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+.product-img {
+    width: 100%;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    margin-top: .7rem;
+    text-align: center;
+}
+
+.button-card {
+    color: #fff;
+    background-color: #e5763f;
+    border-color: #e5763f;
+}
+
+.style-card p {
+    font-weight: 800;
+}
+
+.w-50 {
+    margin: 0 auto;
+    border-radius: 0;
+}
+
+
+/* ########################
+--------Gallery-----  */
+
+.gallery-img-container {
+    background-image: url(./assets/gallery.jpg);
+    height: 35rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    padding-top: 20rem;
+    text-align: center;
+}
+
+.gallery-text {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.gallery-img-container a {
+    margin-top: 1rem;
+    border: 2px solid #fff;
+    background-color: #ffffff00;
+    color: #fff;
+    border-radius: 0;
+}
+
+.gallery-img-container a:hover {
+    color: #222;
+    background-color: #fff;
+}
+
+
+
+
+/* ########################
+--------Blog-----  */
+
+#blog {
+    margin-top: 5rem;
+}
+
+.blog-img {
+    height: 30rem;
+}
+
+.blog-img1 {
+    height: 15rem;
+}
+
+.blog-container {
+    overflow: hidden;
+    position: relative;
+    height: 30rem;
+    transform: scale(1);
+
+    padding: 0 2rem;
+
+    transition: all .5s ease-in-out;
+    /* border: 5px solid red; */
+}
+
+.blog-container1 {
+    height: 14.5rem;
+    margin-bottom: 1rem;
+}
+.blog-container:hover {
+    transform: scale(1.02);
+    transform-origin: bottom bottom
+}
+
+.blog-caption {
+    position: absolute;
+    bottom: 30%;
+    padding: 0 7rem 0rem 3rem;
+}
+
+.blog-caption p {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.blog-caption a {
+    border: 1px solid #fff;
+    color: #fff;
+
+    transition: all .3s;
+}
+
+.blog-caption a:hover {
+    background-color: #fff;
+    color: #222;
+}
+
+#footer {
+    background-color: #222;
+}
+
+
+
+/* 
+################
+Media Queries */
+
+@media (max-width: 575.98px) {
+    .carousel-item {
+        height: 35vh;
+    }
+
+    .carousel-caption h2 {
+        font-size: 1.5rem;
+        width: 20rem;
+    }
+  }
