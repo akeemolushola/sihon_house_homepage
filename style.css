@@ -278,7 +278,7 @@ Media Queries */
     }
 
     .image-container {
-        height: 13rem;
+        height: 20rem;
         margin-bottom: 1rem;
     }
 
@@ -307,12 +307,22 @@ Media Queries */
         height: 14.5rem;
     }
 
+    .blog-container1 {
+        margin-bottom: 1rem 0;
+    }
+
     .blog-img {
         height: 14.5rem;
+    }
+
+    .blog-img1 {
+        width: auto !important;
+        height: 23rem;
     }
 
     .blog-caption {
         bottom: 10%;
         padding: 0 2rem 0rem 1rem;;
     }
+
   }
