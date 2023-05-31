@@ -315,7 +315,7 @@ Media Queries */
         height: 14.5rem;
     }
 
-    .blog-img1 {
+    .blog-img1, .blog-img {
         width: auto !important;
         height: 23rem;
     }
